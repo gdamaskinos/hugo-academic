@@ -7,6 +7,13 @@
 
 (function ($) {
 
+  // gdamaskinos edit
+  document.querySelectorAll('.bracket')
+  .forEach(list => {
+    const c = list.querySelectorAll('li').length + 1;
+    list.style.counterReset = `list ${c}`;
+  });
+
   /* ---------------------------------------------------------------------------
    * Responsive scrolling for URL hashes.
    * --------------------------------------------------------------------------- */
